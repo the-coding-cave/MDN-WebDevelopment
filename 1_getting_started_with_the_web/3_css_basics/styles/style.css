@@ -1,0 +1,101 @@
+html {
+    background-color: #00539f;
+}
+
+body{
+    width:600px; /* this forces the body to always be 600 pixels wide*/
+    height:600px;
+    margin:0 auto; /*2 values: the first affects the top and bottom, the second value affects the left and right.
+    In this case the left and right value is auto, auto is a special value that divides the available horizontal 
+    space evenly left and right.*/
+    background-color:#ff9500; /*This sets the elements background color. What is the difference between setting 
+    the background color for the body vs the html?*/
+    padding: 0 20px 20px 20px; /* We have four values set on the padding, to make a bit of space around the content. 
+    We set no padding on the top of the body, 20 px on the left, bottom, and right. You can choose to set all four 
+    values or you can use one, two, or three values.*/
+    border:10px solid black; /*sets a 10 pixel-wide, solid black border on all sides of the body*/
+   
+}
+
+/*css margins
+Apply the same values to all four sides 
+margin: 2px - one value
+Apply vertically and horizontally
+margin: 5% auto - two values (top-bottom, left-right
+Apply to the top, horizontal, bottom
+margin: 4em auto 3em - top, left-right, buttom 
+Apply different values to all four sides - trbl
+margin: 2px 1em 6px 2em - top,right,bottom,left */
+
+
+
+/* Modify multiple property values at once*/
+p{
+    color:red;
+    width:500px;
+    border:1px solid black;
+}
+
+/*Selecting multiple elements*/
+/* ***cascading*** */
+/*
+https://stackoverflow.com/questions/1043001/what-is-the-meaning-of-cascading-in-css
+https://www.quora.com/What-is-cascading-is-CSS
+*/
+
+
+p, li, a {
+    color:black;
+    font-size:16px;
+    line-height:2;
+    letter-spacing: 1px;
+}
+
+/*attribute selector will select the element with the specified attribute in []*/
+/* img[src] selects <img src = "myimage.png"> but not <img> */
+img[src]{
+    width:300px;
+    height:200px;
+}
+
+h1{
+    margin:0; /*TNotices that there is a gap at the top of the body. This happens because browsers
+    generally apply some default styling to the first element, in this case our <h1>, even when you 
+     haven't applied any CSS at all. To get right of the gap, we overrode the default browser styling 
+     by setting margin:0; to the h1.*/
+     padding: 20px 0; /* we've applied 20px padding to the top and bottom, and 0 padding for the left and right*/
+     color:blue;
+     text-shadow: 3px 3px 1px black; /*text shadow applies a text shadow to the text content of an element.
+     It's four values are as follows:
+
+     The first pixel value
+     sets the horizontal offset of the shadow from the text - how far it moves across: a negative
+     value should move it to the left
+
+     The second value
+    vertical offset - how it moves down: a negative value should move it up
+
+     The third value
+     sets the blue radius of the shadow - a bigger value will mean a more blurry shadow
+
+     The fourth value
+     sets the base color of the shadow
+     */
+
+}
+
+h3{
+    margin:0;
+    padding:20px 10px;
+    color:blue;
+    text-shadow: -5px -7px 1px black;
+}
+
+/*Centering the image*/
+img{
+    display:block; /*The body element is a block element, meaning it takes up space on the page and can
+    have margin and other spacing values applied to it. Images are inline elements, meaning they can't. 
+    So to apply margins to the image, we have to give the image block-level behaviour using 
+    display:block (display image as block element). */
+    margin:0 auto;
+}
