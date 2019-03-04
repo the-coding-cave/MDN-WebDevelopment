@@ -6,3 +6,6 @@ JavaScript itself is fairly compact yet very flexible. Developers have written a
 * Third-party APIs — Allow developers to incorporate functionality in their sites from other content providers, such as Twitter or Facebook.
 
 * Third-party frameworks and libraries — You can apply these to your HTML to allow you to rapidly build up sites and applications.
+
+[MDN - Javascript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+
