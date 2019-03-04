@@ -45,5 +45,11 @@
      setUserName();
    }
 
+// https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/
    //    https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 //    https://alligator.io/js/introduction-localstorage-sessionstorage/
+
+
+// https://stackoverflow.com/questions/25955749/what-is-a-key-value-pair
+// https://javascript.info/object
+// https://hackernoon.com/explaining-the-basics-of-the-javascript-object-keys-object-values-and-object-entries-methods-a10070cae63ahttps://hackernoon.com/explaining-the-basics-of-the-javascript-object-keys-object-values-and-object-entries-methods-a10070cae63a
